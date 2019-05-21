@@ -8,7 +8,7 @@ spring:
   application:
     name: price-server
   datasource:
-    type:
+    type: com.alibaba.druid.pool.DruidDataSource
     platform: mysql
     url: jdbc:mysql://localhost:3306/eshop
     username: root
