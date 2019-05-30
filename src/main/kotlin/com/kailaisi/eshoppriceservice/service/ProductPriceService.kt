@@ -12,4 +12,5 @@ interface ProductPriceService {
     fun delete(id: Long)
     fun update(productPrice: ProductPrice)
     fun findById(id: Long): ProductPrice
+    fun findByProductId(id: Long): ProductPrice
 }

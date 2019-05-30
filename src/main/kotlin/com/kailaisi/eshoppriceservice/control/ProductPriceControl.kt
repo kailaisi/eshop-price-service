@@ -46,4 +46,9 @@ class ProductPriceControl {
     fun findById(id: Long): ProductPrice {
         return mService.findById(id)
     }
+    @RequestMapping("/findByProductId")
+    @ResponseBody
+    fun findByProductId(id: Long): ProductPrice{
+        return mService.findByProductId(id)
+    }
 }

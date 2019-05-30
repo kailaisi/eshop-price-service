@@ -24,4 +24,9 @@ interface ProductPriceMapper {
             Result(column = "product_id", property = "productId")
     )
     fun findById(id: Long): ProductPrice
+    @Select("select * from product_price where id=#{id} limit 0")
+    @Results(
+            Result(column = "product_id", property = "productId")
+    )
+    fun findByProductId(id: Long): ProductPrice
 }
